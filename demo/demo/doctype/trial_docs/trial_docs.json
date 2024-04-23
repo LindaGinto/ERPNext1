@@ -1,0 +1,198 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-16 22:48:49.908668",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "id",
+  "cust_name",
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "l_section",
+  "i",
+  "j",
+  "k",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t_tab",
+  "u",
+  "v",
+  "w"
+ ],
+ "fields": [
+  {
+   "fieldname": "id",
+   "fieldtype": "Link",
+   "label": "ID",
+   "options": "Item",
+   "unique": 1
+  },
+  {
+   "depends_on": "eval:doc.id==\"001\"",
+   "fieldname": "cust_name",
+   "fieldtype": "Data",
+   "label": "cust_name"
+  },
+  {
+   "fieldname": "a",
+   "fieldtype": "Autocomplete",
+   "label": "a"
+  },
+  {
+   "fieldname": "b",
+   "fieldtype": "Barcode",
+   "label": "b"
+  },
+  {
+   "fieldname": "c",
+   "fieldtype": "Button",
+   "label": "c"
+  },
+  {
+   "fieldname": "d",
+   "fieldtype": "Code",
+   "label": "d"
+  },
+  {
+   "fieldname": "e",
+   "fieldtype": "Color",
+   "label": "e"
+  },
+  {
+   "fieldname": "f",
+   "fieldtype": "Datetime",
+   "label": "f"
+  },
+  {
+   "fieldname": "g",
+   "fieldtype": "Duration",
+   "label": "g"
+  },
+  {
+   "fieldname": "h",
+   "fieldtype": "Fold",
+   "label": "h"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "l_section",
+   "fieldtype": "Section Break",
+   "label": "l"
+  },
+  {
+   "fieldname": "i",
+   "fieldtype": "HTML",
+   "label": "i"
+  },
+  {
+   "fieldname": "j",
+   "fieldtype": "HTML Editor",
+   "label": "j"
+  },
+  {
+   "fieldname": "k",
+   "fieldtype": "Icon",
+   "label": "k"
+  },
+  {
+   "default": "/home/acer/Downloads",
+   "fieldname": "l",
+   "fieldtype": "Image",
+   "label": "l"
+  },
+  {
+   "fieldname": "m",
+   "fieldtype": "JSON",
+   "label": "m"
+  },
+  {
+   "fieldname": "n",
+   "fieldtype": "Long Text",
+   "label": "n"
+  },
+  {
+   "fieldname": "o",
+   "fieldtype": "Markdown Editor",
+   "label": "o"
+  },
+  {
+   "fieldname": "p",
+   "fieldtype": "Password",
+   "label": "p"
+  },
+  {
+   "fieldname": "q",
+   "fieldtype": "Percent",
+   "label": "q"
+  },
+  {
+   "fieldname": "r",
+   "fieldtype": "Rating",
+   "label": "r"
+  },
+  {
+   "fieldname": "s",
+   "fieldtype": "Small Text",
+   "label": "s"
+  },
+  {
+   "fieldname": "t_tab",
+   "fieldtype": "Tab Break",
+   "label": "t"
+  },
+  {
+   "fieldname": "u",
+   "fieldtype": "Table MultiSelect",
+   "label": "u",
+   "options": "Trial child"
+  },
+  {
+   "fieldname": "v",
+   "fieldtype": "Text Editor",
+   "label": "v"
+  },
+  {
+   "fieldname": "w",
+   "fieldtype": "Time",
+   "label": "w"
+  }
+ ],
+ "links": [],
+ "modified": "2024-04-19 12:32:42.872927",
+ "modified_by": "Administrator",
+ "module": "Demo",
+ "name": "Trial docs",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

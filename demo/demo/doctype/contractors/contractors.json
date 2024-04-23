@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{project_name}",
+ "creation": "2024-04-19 15:46:25.435073",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_name",
+  "project_head",
+  "number_of_workers"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "project name",
+   "options": "Testing Main"
+  },
+  {
+   "fieldname": "project_head",
+   "fieldtype": "Data",
+   "label": "project head"
+  },
+  {
+   "fieldname": "number_of_workers",
+   "fieldtype": "Data",
+   "label": "number of workers"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-19 16:03:12.693653",
+ "modified_by": "Administrator",
+ "module": "Demo",
+ "name": "Contractors",
+ "name_case": "UPPER CASE",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

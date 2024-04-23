@@ -1,0 +1,136 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{employee_name}-{##}",
+ "creation": "2024-04-19 22:25:56.511292",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "posting_date",
+  "employee_id",
+  "employee_name",
+  "employee_address",
+  "joining_date",
+  "relieving_date",
+  "resignation_date",
+  "department",
+  "designation",
+  "employee_email",
+  "section_break_mmkip",
+  "select_experience_letter_template",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "default": "Now",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "label": "Employee ID",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fetch_from": "employee_id.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fetch_from": "employee_id.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fetch_from": "employee_id.personal_email",
+   "fieldname": "employee_email",
+   "fieldtype": "Data",
+   "label": "Employee Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "section_break_mmkip",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "select_experience_letter_template",
+   "fieldtype": "Link",
+   "label": "Select Experience Letter Template",
+   "options": "Experience Letter Template"
+  },
+  {
+   "fetch_from": "select_experience_letter_template.description",
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fetch_from": "employee_id.current_address",
+   "fieldname": "employee_address",
+   "fieldtype": "Text",
+   "label": "Employee Address"
+  },
+  {
+   "fetch_from": "employee_id.date_of_joining",
+   "fieldname": "joining_date",
+   "fieldtype": "Date",
+   "label": "Joining date"
+  },
+  {
+   "fetch_from": "employee_id.relieving_date",
+   "fieldname": "relieving_date",
+   "fieldtype": "Date",
+   "label": "Relieving date"
+  },
+  {
+   "fetch_from": "employee_id.resignation_letter_date",
+   "fieldname": "resignation_date",
+   "fieldtype": "Date",
+   "label": "Resignation Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-23 09:16:50.191249",
+ "modified_by": "Administrator",
+ "module": "Demo",
+ "name": "Experience Letter",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
