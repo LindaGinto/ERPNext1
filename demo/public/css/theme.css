@@ -1,0 +1,27 @@
+.navbar-home img 
+{
+    max-height: 150px;
+    width: auto;
+}
+ .layout-side-section
+{
+background-color:#1a75bb !important;
+}
+.sticky-top,.navbar
+{
+background-color:#f6921e !important;
+background:#f6921e !important;
+}
+.widget:hover{
+    background-color:#DCDCDC
+
+}
+
+li.dropdown.dropdown-help.dropdown-mobile {
+    display: none;
+}
+
+
+.dropdown-help {
+display: none !important;
+}
